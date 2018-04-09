@@ -8,11 +8,13 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
 import com.oto.kyc.dao.UserDao;
 import com.oto.kyc.model.User;
 import com.oto.kyc.service.UserService;
+import com.oto.kyc.service.exception.ServiceException;
 
 /**
  * @author otocon
@@ -20,7 +22,7 @@ import com.oto.kyc.service.UserService;
  */
 @Service
 @Transactional
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl extends GenericServiceImpl<User, Integer> implements UserService {
 
 	/**
 	 * 
@@ -39,6 +41,20 @@ public class UserServiceImpl implements UserService {
 			// TODO: handle exception
 		}
 		return result;
+	}
+
+
+	@Override
+	public CrudRepository<User, Integer> getDao() {
+		// TODO Auto-generated method stub
+		return this.userDao;
+	}
+
+
+	@Override
+	public User getActivated(Integer id) throws ServiceException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
