@@ -1,0 +1,92 @@
+.page-layout {
+	background-color: #f6f6f6
+}
+
+.user-money-info {
+	display: flex;
+	justify-content: space-between;
+	padding: 2.5em 3em;
+	background-color: #ffffff;
+	color: #354052;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.user-money-info .user-profile {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 6em;
+	flex: 1 0 0%;
+}
+
+.user-money-info .user-profile .user-image {
+	width: 8.5em;
+	height: 8.5em;
+	margin-right: 3em;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	border-radius: 50% !important
+}
+
+.user-money-info .user-profile .user-name {
+	margin-top: 0.3em;
+	font-size: 1.4em;
+}
+
+.user-money-info .user-profile .user-group {
+	margin-top: 0.3em;
+	color: #354052;
+}
+
+.user-money-info .user-profile .total-summary {
+	margin-top: 1em;
+}
+
+.user-money-info .user-profile .total-summary .amount {
+	margin-top: 0.3em;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #354052;
+}
+
+.user-money-info .totals-summary {
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 6em;
+	flex: 1 0 0%;
+}
+
+.user-money-info .totals-summary td {
+	padding: 0.6em 0.1em;
+}
+
+.user-money-info .totals-summary .column-amount {
+	padding-left: 1.1em;
+	text-align: right;
+}
+
+.user-money-info .totals-summary .column-amount .amount {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #354052;
+}
+
+.user-money-info .totals-summary .column-amount .amount.cashflow {
+	color: #149dff;
+}
+
+.user-money-info .totals-summary .column-amount .amount.income {
+	color: #28cb7c;
+}
+
+.user-money-info .totals-summary .column-amount .amount.expense {
+	color: #e74c3c;
+}
+
+.user-money-info .totals-summary .column-change {
+	text-align: left;
+}
+
+.user-money-info .change {
+	margin-left: 1em;
+	color: #149dff;
+}
